@@ -1,0 +1,38 @@
+.card {
+  background-color: #fff;
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card__image {
+  border-bottom: 8px solid black;
+  cursor: pointer;
+  display: block;
+  transition: all 0.3s;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card__vote {
+  width: 40px;
+  padding: 15px;
+}
+
+.card__header,
+.card__description {
+  padding: 15px;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__description {
+  border-top: 4px solid #ff0000;
+}

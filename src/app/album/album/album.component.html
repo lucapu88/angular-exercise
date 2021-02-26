@@ -1,0 +1,11 @@
+<div>
+  <button type="button" (click)="showForm()">Add album</button>
+  <div class="album-grid">
+    <app-card
+      *ngFor="let album of albums"
+      [album]="album"
+      (edit)="showForm(album)"
+      (delete)="onDelete(album)"
+    ></app-card>
+  </div>
+</div>

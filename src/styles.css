@@ -1,1 +1,137 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+}
+
+main {
+  padding: 0 20px 20px 20px;
+}
+
+h1 {
+  align-items: center;
+  border-left: 5px solid black;
+  color: #333;
+  display: flex;
+  font-size: 26px;
+  font-weight: normal;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 10px;
+}
+
+@media all and (max-width: 600px) {
+  h1 {
+    flex-direction: column;
+  }
+
+  h1 button {
+    margin-top: 10px;
+  }
+}
+
+input,
+textarea {
+  border: 1px solid #ccc;
+  border-left: 4px solid #1de70b;
+  border-radius: 2px;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding: 15px;
+  width: 100%;
+}
+
+input.ng-invalid,
+textarea.ng-invalid {
+  border-left-color: #f33;
+}
+
+input:focus,
+textarea:focus {
+  border-left-color: #2196f3;
+  outline: none;
+}
+
+input[type='file'] {
+  width: calc(100% - 200px);
+}
+
+input[type='file'] + button {
+  margin-left: 10px;
+}
+
+textarea {
+  min-height: 170px;
+}
+
+button {
+  background-color: black;
+  border: 3px solid black;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  max-width: 150px;
+  outline: none;
+  padding: 7px;
+  transition: all 0.3s;
+  width: 100%;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+form button[type='button'] {
+  background-color: #999;
+  border-color: #999;
+}
+
+button:hover:not(:disabled) {
+  background-color: #fff;
+  color: #555555;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  min-width: 350px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 30px;
+  table-layout: fixed;
+  text-align: left;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(0deg) rotateY(-179.9deg);
+  }
+  100% {
+    transform: perspective(120px) rotateX(180deg) rotateY(-180deg);
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}

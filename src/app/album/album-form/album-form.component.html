@@ -1,0 +1,17 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <input type="text" placeholder="Album name*" formControlName="name" />
+  <input type="number" placeholder="Year" formControlName="year" appHighlight />
+  <input type="text" placeholder="Artist name*" formControlName="artist" />
+  <input type="text" placeholder="Album-image*(link)" formControlName="cover" />
+  <input
+    type="number"
+    placeholder="Vote (1-5)"
+    formControlName="vote"
+    appHighlight
+  />
+
+  <footer>
+    <button type="button" mat-dialog-close>cancel</button>
+    <button type="submit" [disabled]="!form.valid">save</button>
+  </footer>
+</form>

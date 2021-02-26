@@ -1,0 +1,29 @@
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 30px;
+}
+
+.logout {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+h1 {
+  border-right: 5px solid black;
+}
+
+@media all and (min-width: 600px) {
+  .album-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (min-width: 1000px) {
+  .album-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

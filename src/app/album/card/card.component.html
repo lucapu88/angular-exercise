@@ -1,0 +1,14 @@
+<div class="card">
+  <img [src]="album.cover" class="card__image" (click)="edit.emit()" />
+  <div class="card__header">
+    <strong>{{ album.name }}</strong>
+    <small *ngIf="album.year">Year:{{ album.year }}</small>
+  </div>
+  <div class="card__description">
+    {{ album.artist }}
+  </div>
+  <img *ngFor="let item of rating" src="./assets/star.png" class="card__vote" />
+  <footer>
+    <button type="button" (click)="delete.emit()">Delete</button>
+  </footer>
+</div>

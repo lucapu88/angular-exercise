@@ -1,0 +1,24 @@
+Soggetti di esempio
+Album Musicali (nome, anno, artista, link-cover, voto 1-5)
+
+Mini Progetto
+    - Nuovo progetto Angular con Router
+    - Sono previste 3 pagine:
+        - pagina di lista con operazioni CRUD (creazione, modifica, eliminazione)
+        - pagina dashboard che mostrerà delle numeriche:
+            - numero di elementi salvati nel DB
+            - voto medio
+            - lista di nomi (separati da virgola) degli elementi con il voto uguale a 5
+        - pagina di login (la chiamata di auth non ci sarà, cableremo semplicemente un valore true nel momento in cui si submitta il form di login e salveremo lo stato in un servizio creando una persistenza attraverso il local storage / cookie)
+    - L'intera grafica del progetto è a piacere
+    - Per l'operazione di delete, aggiungere una "confirm"
+    - Nel form saranno campi obbligatori solo il nome e il link della foto, quest'ultimo dovrà anche essere validato come URL valido
+    - Per il voto potrete usare il componente "Button toggle" di Angular Material inserendo una icon per la stella:
+	- https://material.angular.io/components/button-toggle/overview
+	- https://material.angular.io/components/icon/examples
+	- https://material.io/resources/icons/?style=baseline
+
+Plus
+Implementate anche una guard che legge lo stato del servizio di auth (es. isLogged) e fa redirect alla pagina di login in caso negativo.
+generazione guard: "ng g g <module>/auth"
+implementazione guard: "canActivate"
