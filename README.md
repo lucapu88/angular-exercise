@@ -1,4 +1,3 @@
-# npm run mock per far partire il db
 
 # AngularProgettoAlbum
 
